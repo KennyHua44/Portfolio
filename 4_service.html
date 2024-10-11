@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- police géniale  fon Awesome-->
+    <script src=" https://kit.fontawesome.com/31149d48b0.js " crossorigin=" anonyme "> </script>
+    <title>Portfolio Site Web</title>
+</head>
+
+
+
+<body>
+    <!--navbar -->
+    <!--
+    Nous utiliserons la classe Bootstrap fixed-top dans l'élément nav pour garder la barre de navigation en haut de la page.
+     La barre de navigation a également une navbar-brand classe où nous gardons le nom de la personne en tant que marque.
+
+     La barre de navigation a les fonctionnalités suivantes :
+        Il comporte six liens : accueil, à propos, services, portfolio, contact et pied de page.
+        Il a un fond transparent. Nous ajouterons un fond sombre au défilement des pages plus tard.
+        Il bascule sur les petits appareils
+  -->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">Michel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--
+        Maintenant, nous allons ajouter une image de héros avec du texte au centre.
+         Une image de héros est un terme de conception Web qui fait référence 
+         à une image pleine largeur de haute qualité 
+         qui affiche les principaux objectifs de l'entreprise ou de l'individu, 
+         une image représentative, une photo ou d'autres éléments accrocheurs. 
+         Cela aide à attirer les utilisateurs sur votre site.
+    -->
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <h2 class="hero_title">Bonjour, c'est moi Michel</h2>
+                    <p class="hero_desc">Je suis un développeur professionnel, diplomé du Collège de Rosemont</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+    La page À propos contient des informations importantes sur vous et votre parcours.
+     Les visiteurs de votre site de portfolio peuvent apprendre à vous connaître grâce
+      aux informations que vous fournissez sur cette page.
+     Nous ajouterons une image sur le côté gauche de la ligne,
+ et sur le côté droit, nous ajouterons notre introduction rapide dans cette section.
+
+ Cela créera une section À propos. Vous pouvez modifier le contenu en fonction de 
+ vos cas d'utilisation. Nous avons ajouté des classes nommées mt-4 et pt-4
+ 
+ avec une classe de conteneur qui définiront 
+ le haut de la marge et le haut du rembourrage à 1,5 rem.
+
+La ligne comporte deux colonnes. On a la col-lg-4classe d'affichage de 
+l'image qui occupera la colonne de gauche avec une grille en 4 parties pour les grands écrans.
+
+La colonne suivante se voit attribuer une classe col-lg-8qui occupera 
+la colonne de droite avec une grille en 8 parties pour les écrans plus grands. 
+Pour les écrans moyens et petits, ils se chevaucheront, ce que nous pouvons voir
+-->
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">A propos de moi</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/about.jpeg" class="imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                        only five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged
+
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Nom: David Michel</li>
+                                <li>Age: 28</li>
+                                <li>Occupation: Développeur Web</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Nom: David Michel</li>
+                                <li>Age: 28</li>
+                                <li>Occupation: Développeur Web</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries, but also the leap into electronic typesetting, remaining
+                            essentially unchanged.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries, but also the leap into electronic typesetting, remaining
+                            essentially unchanged.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--
+        Cette section aide à transformer les visiteurs du site Web en clients potentiels.
+         C'est ici que vous expliquez les services 
+        spécifiques que vous proposez et où vous ciblez les clients pour les services proposés.
+    -->
+    <!--
+        Étant donné que ce site Web est destiné aux développeurs et concepteurs Web, 
+        j'ai inclus certains des services qu'un développeur ou concepteur Web pourrait offrir.
+
+        Nous avons utilisé des cartes d'amorçage pour afficher les services. 
+        Notre section services comporte 2 lignes et 3 colonnes chacune.
+        Pour les grands écrans d'une largeur supérieure ou égale à 992px, 
+        trois cartes sont affichées à la suite. Pour les écrans de moins de 992 pixels de large,
+        une seule carte est affichée à la suite.
+    -->
+
+    <!-- services section-->
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center">Services</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-clock"></i>
+                            <h4 class="card-title mt-3">Développement de site Web</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3">Conception de site Web</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='far servicesIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3">Déploiement du site Web</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-search'></i>
+                            <h4 class="card-title mt-3">SEO</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-shield-alt'></i>
+                            <h4 class="card-title mt-3">DevOps</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-wrench'></i>
+                            <h4 class="card-title mt-3">QA</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
